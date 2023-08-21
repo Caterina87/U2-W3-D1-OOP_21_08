@@ -6,6 +6,33 @@
     <title>OOP</title>
   </head>
   <body>
+    <h1>Inserisci i dati del tuo animaletto</h1>
+    <form onsubmit="addAnimal(event)">
+      <input type="text" id="Nome" placeholder="Nome" required />
+      <input type="text" id="NomePadrone" placeholder="Nome del padrone" required />
+      <label for="specie">Scegli la specie</label>
+
+      <select name="specie" id="specie">
+        <option value="cane">Cane</option>
+        <option value="gatto">Gatto</option>
+        <option value="coniglio">Coniglio</option>
+        <option value="cavallo">Cavallo</option>
+      </select>
+      <label for="razza">Scegli la razza</label>
+
+      <select name="razza" id="razza">
+        <option value="labrador">Labrador</option>
+        <option value="soriano">Soriano</option>
+        <option value="nano">Nano</option>
+        <option value="lusitano">Lusitano</option>
+      </select>
+
+      <button>Invia i dati</button>
+    </form>
+
+    <ul id="idAnimalList"></ul>
+
     <script src="Esercizio1.js"></script>
+    <script src="Esercizio2.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+console.log("Esercizio 1");
+
 class User {
   constructor(firstName, lastName, age, location) {
     this.firstName = firstName;
